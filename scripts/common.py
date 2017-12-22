@@ -12,7 +12,7 @@ import yaml
 
 
 # Determine experiment directory.
-EXPERIMENT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+EXPERIMENT_DIR = os.path.abspath('/data/')
 # Reserved router identifiers.
 RESERVED_ROUTER_IDS = [0, 254]
 
