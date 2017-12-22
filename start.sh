@@ -8,6 +8,6 @@ export DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
 
 # Start the main application.
 echo "Running all KORUZA experiment monitoring scripts."
-nohup python ./scripts/link-test.py > /var/log/koruza-link-test.log &
-nohup python ./scripts/weather.py > /var/log/koruza-weather.log &
-wait
+python ./scripts/link-test.py
+#nohup python ./scripts/weather.py > /data/koruza-weather.log &
+#wait
