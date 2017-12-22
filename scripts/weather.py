@@ -50,6 +50,7 @@ class WeatherStationAPI(object):
 
 
 def push(data):
+    print('Temperature {} C, Wind {} km/h'.format( data['outdoor']['temperature'],data['wind']['speed']))
     """Submit data to nodewatcher instance."""
     body = {
         'sensors.generic': {
