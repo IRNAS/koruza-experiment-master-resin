@@ -14,7 +14,7 @@ RTT_REGEXP = re.compile(r'rtt min/avg/max/mdev = (.+?)/(.+?)/(.+?)/(.+?) ms')
 
 
 def push(uuid, link_id, sent, received, rtt_min, rtt_avg, rtt_max):
-    print('Link {} : {}%'.format(link_id,100.0 * (1.0 - float(received) / float(sent))))
+    print('Link {} s {} r {} : {}%'.format(link_id,sent,received,100.0 * (1.0 - float(received) / float(sent))))
 
     """Submit data to nodewatcher instance."""
     body = {
