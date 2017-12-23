@@ -1,0 +1,25 @@
+# Secret part of this configuration is in secrets.yml.
+nodewatcher:
+  host: push.kw.koruza.net
+  # host may be different, is where your KORUZA devices are registered
+weather:
+  # IP ddress where the weather station is reachable.
+  host: <weather  station IP>
+  # UUID of the weather station node on nodewatcher.
+  uuid: <weather station UUID>
+links:
+  - 1
+  - 2
+routers:
+  # Router 1
+  - id: 1
+    link_a: 1
+    uuid_a: <koruza link 1 unit 1 UUID>
+    link_b: 2
+    uuid_b: <koruza link 2 unit 1 UUID>
+  # Router 2
+  - id: 2
+    link_a: 2
+    uuid_a: <koruza link 2 unit 2 UUID>
+    link_b: 1
+    uuid_b: <koruza link 1 unit 2 UUID>
